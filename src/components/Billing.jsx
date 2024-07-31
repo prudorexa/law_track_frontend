@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Container, Paper, Typography, TextField, Button, Grid, MenuItem, Select, FormControl, InputLabel, Box } from '@mui/material';
 import axios from 'axios';
 import lawFirmImage from '../assets/laww.webp';
-import BASE_URL from '../../config';
+import BASE_URL from './config';
 
 // Configure Axios instance for API requests
 axios.defaults.xsrfCookieName = 'csrftoken';

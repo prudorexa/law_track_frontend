@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import lawFirmImage from '../assets/topp jet.jpg';
-import BASE_URL from '../../config';
+import BASE_URL from './config';
 
 // Configure Axios instance for API requests
 axios.defaults.xsrfCookieName = 'csrftoken';
