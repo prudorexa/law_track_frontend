@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/laww firm.png'; 
-
+import logo from '../../public/static/images/laww firm.png' 
 export default function Footer() {
   return (
     <footer className="bg-black text-white py-8">

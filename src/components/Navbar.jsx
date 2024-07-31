@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'; 
-import logo from '../assets/laww firm.png';
+import logo from '../../public/static/images/laww firm.png';
 
 const Navbar = ({ userRole, setUserRole }) => {
   const [dropdown, setDropdown] = useState(null);
