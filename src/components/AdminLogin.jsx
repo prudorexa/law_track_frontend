@@ -51,7 +51,7 @@ const AdminLogin = () => {
       const response = await client.post(`${BASE_URL}/api/api/login/`, { email, password });
       if (response.status === 200) {
         setMessage('Login successful!');
-        navigate('/Dashboard'); // Navigate to desired page after successful login
+        navigate('/Dashboard'); 
       } else {
         setMessage('Login failed. Please check your credentials.');
       }
@@ -66,7 +66,7 @@ const AdminLogin = () => {
       const response = await client.post(`${BASE_URL}/api/api/users/`, { username: name, email, password, role });
       if (response.status === 201) {
         setMessage('Registration successful!');
-        setAction('Login'); // Automatically switch to login after successful signup
+        setAction('Login'); 
       } else {
         setMessage('Registration failed. Please check your details.');
       }
@@ -91,7 +91,7 @@ const AdminLogin = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: `url('static/images/criminal  litigation.webp')`}}>
+    <div className="min-h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: `url('/static/images/topping.webp')`}}>
       <div className="bg-white bg-opacity-80 shadow-lg rounded-lg px-6 pt-6 pb-8 mb-4 w-full max-w-md sm:px-8 sm:pt-8 sm:pb-10">
         <div className="text-2xl font-bold mb-4 text-center text-gray-800 sm:text-3xl">{action}</div>
         <div className="mb-6">
