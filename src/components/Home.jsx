@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <div className="relative min-h-screen">
-      <div className="w-full h-[70vh] sm:h-[80vh] md:h-[90vh] bg-cover bg-center" style={{ backgroundImage: "url('public/static/images/lawyer.jpg')" }}>
+      <div className="w-full h-[70vh] sm:h-[80vh] md:h-[90vh] bg-cover bg-center" style={{ backgroundImage: "url('/static/images/lawyer.jpg')" }}>
         <div className="flex flex-col items-center justify-center h-full bg-black bg-opacity-50 p-4">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-6">Welcome to Our Law Track</h1>
           <div className="flex space-x-4">
@@ -21,9 +21,9 @@ const Home = () => {
             <p className="text-base sm:text-lg md:text-xl text-gray-700">Our law firm is dedicated to providing top-notch legal services and representation in various fields of law. Our experienced team is committed to achieving the best outcomes for our clients.</p>
           </div>
           <div className="md:w-2/5 flex space-x-4">
-            <img className="w-24 h-24 rounded-full object-cover" src="public/static/images/negotiation.webp" alt="About Us" />
-            <img className="w-24 h-24 rounded-full object-cover" src="public/static/images/Probate and success.webp" alt="Our Services" />
-            <img className="w-24 h-24 rounded-full object-cover" src="public/static/images/topping.webp" alt="Contact Us" />
+            <img className="w-24 h-24 rounded-full object-cover" src="/static/images/negotiation.webp" alt="About Us" />
+            <img className="w-24 h-24 rounded-full object-cover" src="/static/images/Probate and success.webp" alt="Our Services" />
+            <img className="w-24 h-24 rounded-full object-cover" src="/static/images/topping.webp" alt="Contact Us" />
           </div>
         </section>
       </div>
