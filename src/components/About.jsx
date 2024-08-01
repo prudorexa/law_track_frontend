@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 const About = () => {
   return (
     <div className="relative min-h-screen">
-      <div className="w-full h-[70vh] sm:h-[80vh] md:h-[90vh] bg-cover bg-center" style={{ backgroundImage: "url('public/static/images/topp jet.jpg')" }}>
+      <div className="w-full h-[70vh] sm:h-[80vh] md:h-[90vh] bg-cover bg-center" style={{ backgroundImage: "url('static/images/topp jet.jpg')" }}>
         <div className="flex flex-col items-center justify-center h-full bg-black bg-opacity-50 p-4">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-6">Welcome to Our Law Track</h1>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-6">About Us</h1>
           <div className="flex space-x-4">
             <Link to="/contact" className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 text-lg sm:text-xl">Contact Us</Link>
             <Link to="/schedule" className="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-500 text-lg sm:text-xl">Schedule</Link>
@@ -24,7 +24,7 @@ const About = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           <section className="about-section bg-white bg-opacity-80 shadow-md p-6 sm:p-8 rounded-lg">
-            <img src="public/static/images/provide legal advice.webp" alt="Our History" className="mb-4 rounded-lg w-full h-auto object-cover" />
+            <img src="/static/images/provide legal advice.webp" alt="Our History" className="mb-4 rounded-lg w-full h-auto object-cover" />
             <h2 className="text-2xl sm:text-4xl font-semibold mb-2 text-gray-800">Our History</h2>
             <p className="text-base sm:text-xl text-gray-700">
               Founded in 2000, our firm has grown from a small practice to a well-established firm with a reputation for excellence. We have consistently been recognized for our dedication to client service and legal expertise.
@@ -32,7 +32,7 @@ const About = () => {
           </section>
 
           <section className="about-section bg-white bg-opacity-80 shadow-md p-6 sm:p-8 rounded-lg">
-            <img src="public/static/images/laww.webp" alt="Our Mission" className="mb-4 rounded-lg w-full h-auto object-cover" />
+            <img src="/static/images/laww.webp" alt="Our Mission" className="mb-4 rounded-lg w-full h-auto object-cover" />
             <h2 className="text-2xl sm:text-4xl font-semibold mb-2 text-gray-800">Our Mission</h2>
             <p className="text-base sm:text-xl text-gray-700">
               Our mission is to provide exceptional legal services with integrity, professionalism, and respect for our clients and the community.
@@ -40,7 +40,7 @@ const About = () => {
           </section>
 
           <section className="about-section bg-white bg-opacity-80 shadow-md p-6 sm:p-8 rounded-lg">
-            <img src="public/static/images/topp jet.jpg" alt="Our Team" className="mb-4 rounded-lg w-full h-auto object-cover" />
+            <img src="/static/images/topp jet.jpg" alt="Our Team" className="mb-4 rounded-lg w-full h-auto object-cover" />
             <h2 className="text-2xl sm:text-4xl font-semibold mb-2 text-gray-800">Our Team</h2>
             <p className="text-base sm:text-xl text-gray-700">
               Our team is composed of experienced lawyers, paralegals, and support staff who are committed to achieving the best outcomes for our clients. We believe in a collaborative approach to legal practice, ensuring that each client receives personalized and effective legal solutions.
@@ -48,7 +48,7 @@ const About = () => {
           </section>
 
           <section className="about-section bg-white bg-opacity-80 shadow-md p-6 sm:p-8 rounded-lg">
-            <img src="public/static/images/topping.webp" alt="Our Values" className="mb-4 rounded-lg w-full h-auto object-cover" />
+            <img src="/static/images/topping.webp" alt="Our Values" className="mb-4 rounded-lg w-full h-auto object-cover" />
             <h2 className="text-2xl sm:text-4xl font-semibold mb-2 text-gray-800">Our Values</h2>
             <ul className="list-disc pl-5 text-base sm:text-xl text-gray-700">
               <li className="mb-2"><strong>Integrity:</strong> We uphold the highest standards of ethical practice in all our dealings.</li>
