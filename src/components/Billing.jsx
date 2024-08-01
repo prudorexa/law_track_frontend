@@ -68,7 +68,8 @@ const Billing = ({ onSuccess }) => {
       if (onSuccess) onSuccess(response.data);
       console.log('Billing submitted:', response.data);
       alert('Billing information submitted successfully!');
-    } catch (error) {
+    } 
+    catch (error) {
       console.error('Error submitting billing:', error);
       setError('Failed to submit billing information. Please try again.');
     }
