@@ -125,7 +125,7 @@ const CaseList = ({ cases, onEdit, onDelete, onViewDetails }) => {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       {cases.map(caseItem => (
         <div key={caseItem.id} className="p-4 border border-gray-300 bg-white rounded-md shadow-sm">
-          <h2 className="text-xl font-semibold text-gray-800 mb-2">{caseItem.title}</h2>
+          <h2 className="text-xl font-semibold text-black mb-2">{caseItem.title}</h2>
           <p className="text-gray-700 mb-2">{caseItem.description}</p>
           <p className="text-gray-600 mb-2">Status: {caseItem.status}</p>
           <p className="text-gray-600 mb-4">Assigned Lawyers: {caseItem.assigned_lawyers.map(lawyer => lawyer.name).join(', ')}</p>

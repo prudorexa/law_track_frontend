@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import BASE_URL from './config';
 
 // Fetch data function using Axios
@@ -128,6 +129,7 @@ const Navbar = ({ items, activeItem, onSelectItem }) => (
 
 // Main Dashboard Component
 const Dashboard = () => {
+  const navigate = useNavigate();
   const [userRole, setUserRole] = useState('');
   const [activeSection, setActiveSection] = useState('Users');
   const [users, setUsers] = useState([]);
@@ -136,21 +138,21 @@ const Dashboard = () => {
   // const [messages, setMessages] = useState([]);
   const [schedules, setSchedules] = useState([]);
   const [contacts, setContacts] = useState([]);
-  const [billings, setBillings] = useState([]);
+  const [billings, setBilling] = useState([]);
   const [profile, setProfile] = useState({});
 
   const adminSections = ['Users', 'Schedule', 'Contacts', 'Billings'];
   const lawyerSections = ['Assigned Cases', 'Schedule'];
 
   useEffect(() => {
-    setUserRole('admin'); 
+    setUserRole('admin');
 
     if (userRole === 'admin') {
       fetchData(`${BASE_URL}/api/api/users/`, setUsers);
       fetchData(`${BASE_URL}/api/cases/`, setCases);
       fetchData(`${BASE_URL}/api/schedules/`, setSchedules);
       fetchData(`${BASE_URL}/api/contact/`, setContacts);
-      fetchData(`${BASE_URL}/api/billings/`, setBillings);
+      fetchData(`${BASE_URL}/api/billing/`, setBilling);
     }
 
     // Fetch data for lawyer
@@ -181,7 +183,7 @@ const Dashboard = () => {
         case 'Contacts':
           return <Section title="Manage Contacts" data={contacts} columns={['ID', 'Name', 'Email', 'Message']} />;
         case 'Billings':
-          return <Section title="Manage Billings" data={billings} columns={['Invoice Number', 'Amount', 'Issue Date', 'Due Date', 'Case']} />;
+          return <Section title="Manage Billings" data={billings} columns={['ID', 'Invoice Number', 'Amount', 'Issue Date', 'Due Date', 'Case']} />;
         default:
           return null;
       }
@@ -209,6 +211,12 @@ const Dashboard = () => {
         onSelectItem={setActiveSection}
       />
       <div className="flex-1 p-6 overflow-auto">
+        <button
+          className="bg-blue-500 text-white py-2 px-4 rounded mb-4"
+          onClick={() => navigate('/home')}
+        >
+          Go to Home
+        </button>
         {renderSection()}
       </div>
     </div>
