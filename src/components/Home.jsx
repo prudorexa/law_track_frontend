@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <div className="relative">
-      <img className="w-full h-[50vh] sm:h-[60vh] md:h-[70vh] object-cover" src="public/static/images/Lawyer.jpg" alt="Lawyer" />
+      <img className="w-full h-[50vh] sm:h-[60vh] md:h-[70vh] object-cover" src="public\static\images\lawyer.jpg" alt="Lawyer" />
 
       <div className="home min-h-screen p-6 flex flex-col items-center justify-center">
         <section className="hero w-full max-w-4xl mb-12 text-center bg-black bg-opacity-50 shadow-xl p-6 md:p-8 rounded-lg">
