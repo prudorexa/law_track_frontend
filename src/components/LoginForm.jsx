@@ -91,7 +91,7 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: `url('static/images/criminal  litigation.webp')`}}>
+    <div className="min-h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: `url('/static/images/criminal  litigation.webp')`}}>
       <div className="bg-white bg-opacity-80 shadow-lg rounded-lg px-6 pt-6 pb-8 mb-4 w-full max-w-md sm:px-8 sm:pt-8 sm:pb-10">
         <div className="text-2xl font-bold mb-4 text-center text-gray-800 sm:text-3xl">{action}</div>
         <div className="mb-6">
