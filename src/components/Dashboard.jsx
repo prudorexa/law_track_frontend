@@ -139,7 +139,7 @@ const Dashboard = () => {
   const [billings, setBillings] = useState([]);
   const [profile, setProfile] = useState({});
 
-  const adminSections = ['Users', 'Cases', 'Schedule', 'Contacts', 'Billings'];
+  const adminSections = ['Users', 'Schedule', 'Contacts', 'Billings'];
   const lawyerSections = ['Assigned Cases', 'Schedule'];
 
   useEffect(() => {

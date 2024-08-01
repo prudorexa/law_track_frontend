@@ -20,6 +20,7 @@ const AdminLogin = () => {
   const [resetEmail, setResetEmail] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const [role, setRole] = useState('');
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -50,7 +51,7 @@ const AdminLogin = () => {
       const response = await client.post(`${BASE_URL}/api/api/login/`, { email, password });
       if (response.status === 200) {
         setMessage('Login successful!');
-        navigate('/admin-dashboard'); // Navigate to desired page after successful login
+        navigate('/Dashboard'); // Navigate to desired page after successful login
       } else {
         setMessage('Login failed. Please check your credentials.');
       }
@@ -62,7 +63,7 @@ const AdminLogin = () => {
 
   const handleSignUp = async () => {
     try {
-      const response = await client.post(`${BASE_URL}/api/api.users`, { username: name, email, password });
+      const response = await client.post(`${BASE_URL}/api/api/users/`, { username: name, email, password, role });
       if (response.status === 201) {
         setMessage('Registration successful!');
         setAction('Login'); // Automatically switch to login after successful signup
@@ -77,7 +78,7 @@ const AdminLogin = () => {
 
   const handlePasswordReset = async () => {
     try {
-      const response = await client.post(`${BASE_URL}/api/api/reset-password/`, { email: resetEmail, newPassword, confirmPassword });
+      const response = await client.post(`${BASE_URL}/api/reset-password/`, { email: resetEmail, newPassword, confirmPassword });
       if (response.status === 200) {
         setMessage('Password reset request successful!');
       } else {
