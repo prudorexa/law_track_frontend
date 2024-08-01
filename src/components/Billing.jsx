@@ -58,7 +58,7 @@ const Billing = ({ onSuccess }) => {
     setError(null);
 
     try {
-      const response = await client.post(`${BASE_URL}/api/billings/`, {
+      const response = await client.post(`${BASE_URL}/api/billing/`, {
         invoice_number: formData.invoiceNumber,
         amount: formData.amount,
         issue_date: formData.issueDate,
