@@ -21,8 +21,8 @@ const Navbar = ({ userRole, setUserRole }) => {
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <img src={logo} alt="Law Firm Logo" className="h-14 w-auto mr-4" />
-          <span className="text-xl text-white font-semibold">Law Firm</span>
-        </div>
+          <span className="text-4xl text-white font-semibold">Law Firm</span>
+          </div>
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? (
