@@ -186,7 +186,7 @@ const Schedule = () => {
             </select>
           </div>
           <div>
-            <label className="block text-black">Case:</label>
+            <label className="block text-black visible">Case:</label>
             <select
               value={caseId}
               onChange={(e) => setCaseId(e.target.value)}
