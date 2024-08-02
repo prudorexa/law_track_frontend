@@ -62,11 +62,11 @@ const Navbar = ({ userRole, setUserRole }) => {
             </button>
             {dropdown === 'documents' && (
               <ul className="text-sm absolute bg-black p-2 mt-2 space-y-2">
-                <li>
+                {/* <li>
                   <Link to="/documents" className="text-white hover:text-gray-300" onClick={handleLinkClick}>
                     Documents
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link to="/billing" className="text-white hover:text-gray-300" onClick={handleLinkClick}>
                     Billing
