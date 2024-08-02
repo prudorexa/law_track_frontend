@@ -109,11 +109,11 @@ const Navbar = ({ userRole, setUserRole }) => {
                     Login
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="/admin-login" className="text-white hover:text-gray-300" onClick={handleLinkClick}>
                     Admin Login
                   </Link>
-                </li>
+                </li> */}
               </ul>
             )}
           </li>
